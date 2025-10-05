@@ -1,12 +1,12 @@
 const fn = () => {
-    const obj1 = {name: 'Jake'};
-    let obj2 = {name: 'Jake'};
+    const obj1 = {name: 'Jake'}; //змінна object1 - константа, тому можемо змінити тільки властивість об'єкту, а не присвоїти інше значення
+    let obj2 = {name: 'Jake'}; //змінна object2 - змінна, тому можемо змінити і властивість об'єкту, і присвоїти інше значення
     console.log(obj1, obj2);
-    obj1.name = 'Kim';
-    obj2.name = 'Kim';
+    obj1.name = 'Samuel';
+    obj2.name = 'Samuel';
     console.log(obj1, obj2);
-    //obj1 = {name: 'Jake Kim'};
-    obj2 = {name: 'Jake Kim'};
+    //obj1 = {name: 'Daniel'};
+    obj2 = {name: 'Daniel'};
     console.log(obj1, obj2);
 };
 fn();  
@@ -14,4 +14,4 @@ fn();
 function createUser (name, city) {
     return {name, city};
 }
-console.log(createUser('Jake Kim', 'Seoul'));
+console.log(createUser('Jake', 'Seoul'));

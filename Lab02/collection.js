@@ -33,3 +33,4 @@ function bookhash(name) {
 };
 console.log(bookhash('Daniel Park'));
 console.log(bookhash('Jake Kim'));
+console.log(bookhash('Gun Park'));
