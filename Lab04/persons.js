@@ -7,7 +7,7 @@ const persons = {
   hitler: { born: 1889, died: 1945 },
   kennedy: { born: 1917, died: 1963 },
 };
-console.log(ages(persons));
+//console.log(ages(persons));
 // {
 //   stalin: 75,
 //   shevchenko: 47,
@@ -19,9 +19,17 @@ console.log(ages(persons));
 // }
 
 function ages(persons) {
-    const result = {};
-    Object.keys(persons).forEach(key => {
-        result[key] = persons[key].died - persons[key].born;
-    });
-    return result;
+  const result = {};
+  Object.keys(persons).forEach(key => {
+    const born = persons[key].born;
+    const died = persons[key].died;
+    result[key] = {
+      born: born,
+      died: died,
+      age: died - born,
+    };
+  });
+  return result;
 }
+
+console.log(ages(persons));
