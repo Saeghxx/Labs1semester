@@ -18,4 +18,3 @@ function ipToNumber2(ip = '192.168.1.10') {
 }
 
 console.log(ipToNumber2()); 
-
